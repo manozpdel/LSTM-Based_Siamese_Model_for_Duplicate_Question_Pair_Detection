@@ -38,14 +38,6 @@ def TripletLossFn(v1, v2, margin=0.25):
     
     return triplet_loss
 
-# Sample embeddings for testing
-v1 = np.array([[0.26726124, 0.53452248, 0.80178373],
-               [0.5178918 , 0.57543534, 0.63297887]])
-v2 = np.array([[ 0.26726124,  0.53452248,  0.80178373],
-               [-0.5178918 , -0.57543534, -0.63297887]])
-
-
-
 def TripletLoss(labels, out, margin=0.25):
    
     # Get embedding size
